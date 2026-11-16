@@ -1,0 +1,22 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+node_modules/
+dist/
+build/
+.workshop-data/
+*.sqlite*
+*.db
+.ipynb_checkpoints/
+exports/
+playwright-artifacts/
+
+# Answers: keep out of the class repo until after the workshop.
+instructor/
+backend/tests/
+scripts/test_tools.py
