@@ -14,8 +14,8 @@ and Python check dependencies; the frontend uses its separate npm lockfile.
 
 ```powershell
 py -3.12 -m venv backend/.venv
-./backend/.venv/Scripts/python.exe -m pip install --upgrade pip
 ./backend/.venv/Scripts/python.exe -m pip install -r requirements.txt
+.\backend\.venv\Scripts\python.exe -m ipykernel install --user --name course-companion --display-name "Course Companion (Python 3.12)"
 npm --prefix frontend ci
 if (-not (Test-Path backend/.env)) { Copy-Item backend/.env.example backend/.env }
 ```
