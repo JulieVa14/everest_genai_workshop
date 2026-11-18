@@ -12,6 +12,7 @@ not include API credit; no Azure account is needed). In PowerShell, from the wor
 ```powershell
 py -3.12 -m venv backend/.venv
 ./backend/.venv/Scripts/python.exe -m pip install -r requirements.txt
+.\backend\.venv\Scripts\python.exe -m ipykernel install --user --name course-companion --display-name "Course Companion (Python 3.12)"
 npm --prefix frontend ci
 if (-not (Test-Path backend/.env)) { Copy-Item backend/.env.example backend/.env }
 ```
